@@ -1,0 +1,55 @@
+{
+  "info": {
+    "_postman_id": "401b5a15-0ec3-4558-8760-f6d9925ec77c",
+    "name": "bcn-walls",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23871273"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\":\"paco5\",\r\n    \"password\":\"1234\",\r\n    \"email\":\"paco@5.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{produccion}}users/register",
+          "host": ["{{produccion}}users"],
+          "path": ["register"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "produccion",
+      "value": "https://jose-ramos-back-final-project-202209-bcn.onrender.com",
+      "type": "string"
+    }
+  ]
+}
